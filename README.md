@@ -1,6 +1,6 @@
 # Overview of FX Destination: an E-commerce FX trading website
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=7s
-" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Overview%20membership.png" 
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Overview%20membership.png" 
 alt="Overview" border="10" /></a>
 
 - Business: sell foreign currencies (FX) online to Australia customers.
@@ -19,7 +19,7 @@ alt="Overview" border="10" /></a>
 - JavaScript to require strong password and validate it in real-time (length of minimum 8 characters, UPPER, lower, number & special character)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=22s
-" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Validate%20password.png" 
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Validate%20password.png" 
 alt="Validate password" border="10" /></a>
 
 - Use Bcrypt with Blowfish encryption algorithm (128-bit salt -> 192-bit magic value) to encrypt password:
@@ -33,7 +33,7 @@ alt="Validate password" border="10" /></a>
   + Users enter OTP to login.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=40s
-" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20OTP%20login.png" 
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20OTP%20login.png" 
 alt="Alternative OTP login" border="10" /></a>
 
 - Forgot password:
@@ -44,66 +44,107 @@ alt="Alternative OTP login" border="10" /></a>
   + Users enter the new password to login.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=1m40s
-" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Forgot%20password%20function.png" 
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Forgot%20password%20function.png" 
 alt="Forgot password" border="10" /></a>
 
 4. Dashboard:
 - Update details function: including password update and hiden sensitive details.
-- Show level of membership + threshold of next level:
+- Show dynamic message based on user behaviours: pending order if added to cart but not paid, number of order paid today, reminder to pay…
+- Show pending rate tracker: show the highest target for each rate if multiple same rate tracker is applied.
+- Show Order stats: total AUD paid which decides level of membership + total amount of each currency purchased.
+- Show the latest order details.
+- Membership benefits: show level of membership + threshold for next level
   + Higher rates for higher levels of membership in product page:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=2m15s
-" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Membership%20benefit%20higher%20level%20higher%20rate.png" 
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Membership%20benefit%20higher%20level%20higher%20rate.png" 
 alt="Membership Benefit: higher level higher rate" border="10" /></a>
 
-  + Level up with total purchased exceeding each threshold:
+   + Level up with total purchased exceeding each threshold:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=8m47s
-" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Membership%20benefit%20level%20up%201.png" 
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Membership%20benefit%20level%20up%201.png" 
 alt="Membership Benefit: exceeding threshold to level up" border="10" /></a>
 
-- Show credit amount thanks to rate guarantee policy:
-  + Different amount for different accounts to pay in cart page.
-- Show dynamic message: pending order if added to cart but not paid; number of order paid today…
-- Show pending rate tracker: show the highest target for each rate if multiple same rate tracker is applied.
-- Show Order stats: total AUD paid -> decide level of membership + total amount of each currency ordered.
-- Show the latest order details.
+- Rate guarantee in 6 hours:
+  + Show credit amount of latest eligible purchase:
+
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Rate%20guarantee%20dashboard.png" 
+alt="Rate guarantee: showing credit amount" border="10" />
+
+  + Credit amount will be auto converted to discount value for the next purchase:
+
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Rate%20guarantee%20payment%20page.png" 
+alt="Rate guarantee: credit amount discounted for next purchase" border="10" />
 
 5. Product page:
+- JavaScript to show Add to Cart only when valid amount entered.
+- JavaScript to disable currencies which were already added to cart.
 - JavaScript to show different destination country photos based on selected currency:
   + Not selected: around the world.
   + Selected: show photos from country of selected currency.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=3m40s
-" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Different%20photos%20for%20different%20currency.png" 
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Different%20photos%20for%20different%20currency.png" 
 alt="Different selected currency different country photos" border="10" /></a>
 
 - JavaScript to automate conversion and allocation of denomination:
   + Users enter FX amount -> AUD amount & quantity of each note will be auto updated.
   + Users enter quantity of note -> FX amount & AUD amount will be auto updated.
   + Users enter AUD amount -> FX amount & quantity of note will be auto updated.
-- JavaScript to show Add to Cart only when valid amount entered:
-- JavaScript to disable currencies which were already added to cart:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=8m55s
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Auto%20conversion%20and%20allocation%20of%20note.png" 
+alt="Auto conversion and allocation of denomination" border="10" /></a>
 
 6. Cart page:
-- Remove currency function: demo
+- Remove currency function.
 - Integrated card payment service from Stripe:
   + Success: 4000000360000006
   + Declined: 4000000000000002
   + Insufficient funds: 4000000000009995
   + Stolen card: 4000000000009979
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=4m36s
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Integrated%20card%20payment%20Stripe.png" 
+alt="Integrated card payment Stripe" border="10" /></a>
+
 7. Track order:
-- Disable if users haven't logged in yet:
+- Disable if users haven't logged in yet.
+- Only show order status of customer who already logged in, not of someone else.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=5m33s
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Track%20Order.png" 
+alt="Track Order" border="10" /></a>
 
 8. Locations with Google Map: 
-- Demo
+9. Contact form:
 
-9. Contact:
-- Demo different email under session
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=10m10s
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Contact%20form%20and%20Google%20Map.png" 
+alt="Contact form with Google Map" border="10" /></a>
 
 10. Tools:
-- Graph history: based on local database
-- Market overview:
+- Graph history: based on live FX rates local database collected from APILayer via API.
+  + Users can select any currency to see its history.
+  + Users can view the graph in different time frame: 1 month, 6 months, 1 year, year to date, and all.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=5m57s
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Graph%20History.png" 
+alt="Graph History" border="10" /></a>
+
 - Rate Tracker:
-- Rate Guarantee:
+  + Users enter the expected rate they are waiting for to purchase the currency.
+  + Users will receive an email immediately when the rate goes up to the target.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=7m39s
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Rate%20Tracker.png" 
+alt="Rate Tracker" border="10" /></a>
+
+- Market overview:
+  + Users can choose any currency to see the rate currently offered from different businesses, in Australia and the world market.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=8m15s
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screenshots/Screen%20Shot%20Market%20Overview.png" 
+alt="Market Overview" border="10" /></a>
+
