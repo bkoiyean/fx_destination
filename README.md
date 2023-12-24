@@ -1,7 +1,7 @@
 # Overview of FX Destination: an E-commerce FX trading website
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=7s
-" target="_blank"><img src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Overview%20membership.png" 
-alt="Overview" align="center" width="800" height="500" border="10" /></a>
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Overview%20membership.png" 
+alt="Overview" border="10" /></a>
 
 - Business: sell foreign currencies (FX) online to Australia customers.
 - Same business in market: First Eastern FX, Travelex, OZMoney.
@@ -19,8 +19,8 @@ alt="Overview" align="center" width="800" height="500" border="10" /></a>
 - JavaScript to require strong password and validate it in real-time (length of minimum 8 characters, UPPER, lower, number & special character)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=22s
-" target="_blank"><img src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Validate%20password.png" 
-alt="Validate password" width="800" height="500" border="10" /></a>
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Validate%20password.png" 
+alt="Validate password" border="10" /></a>
 
 - Use Bcrypt with Blowfish encryption algorithm (128-bit salt -> 192-bit magic value) to encrypt password:
   + Identical passwords will be generated in different secret codes.
@@ -33,8 +33,8 @@ alt="Validate password" width="800" height="500" border="10" /></a>
   + Users enter OTP to login.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=40s
-" target="_blank"><img src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20OTP%20login.png" 
-alt="Alternative OTP login" width="800" height="500" border="10" /></a>
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20OTP%20login.png" 
+alt="Alternative OTP login" border="10" /></a>
 
 - Forgot password:
   + Users enter correct email address.
@@ -44,8 +44,8 @@ alt="Alternative OTP login" width="800" height="500" border="10" /></a>
   + Users enter the new password to login.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=1m40s
-" target="_blank"><img src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Forgot%20password%20function.png" 
-alt="Forgot password" width="800" height="500" border="10" /></a>
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Forgot%20password%20function.png" 
+alt="Forgot password" border="10" /></a>
 
 4. Dashboard:
 - Update details function: including password update and hiden sensitive details.
@@ -53,14 +53,14 @@ alt="Forgot password" width="800" height="500" border="10" /></a>
   + Higher rates for higher levels of membership in product page:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=2m15s
-" target="_blank"><img src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Membership%20benefit%20higher%20level%20higher%20rate.png" 
-alt="Membership Benefit: higher level higher rate" width="800" height="500" border="10" /></a>
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Membership%20benefit%20higher%20level%20higher%20rate.png" 
+alt="Membership Benefit: higher level higher rate" border="10" /></a>
 
   + Level up with total purchased exceeding each threshold:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=8m47s
-" target="_blank"><img src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Membership%20benefit%20level%20up%201.png" 
-alt="Membership Benefit: exceeding threshold to level up" width="800" height="500" border="10" /></a>
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Membership%20benefit%20level%20up%201.png" 
+alt="Membership Benefit: exceeding threshold to level up" border="10" /></a>
 
 - Show credit amount thanks to rate guarantee policy:
   + Different amount for different accounts to pay in cart page.
@@ -75,8 +75,8 @@ alt="Membership Benefit: exceeding threshold to level up" width="800" height="50
   + Selected: show photos from country of selected currency.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8gO7-6R1tSs&t=3m40s
-" target="_blank"><img src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Different%20photos%20for%20different%20currency.png" 
-alt="Different selected currency different country photos" width="800" height="500" border="10" /></a>
+" target="_blank"><img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/main/Screen%20Shot%20Different%20photos%20for%20different%20currency.png" 
+alt="Different selected currency different country photos" border="10" /></a>
 
 - JavaScript to automate conversion and allocation of denomination:
   + Users enter FX amount -> AUD amount & quantity of each note will be auto updated.
