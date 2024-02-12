@@ -1,8 +1,9 @@
 package Day2;
 
 public class FibonacciLogn {
+	public static int countStep = 0;
 	public static void main(String[] args) {
-		int num = 6;
+		int num = 100;
 		int[] arrayOfFibo = new int[num + 4];
 		arrayOfFibo[0] = 0;
 		arrayOfFibo[1] = 1;
@@ -22,6 +23,7 @@ public class FibonacciLogn {
 			System.out.println("Fibonacci of number " + num + " is: "
 					+ arrayOfFibo[num]);
 		}
+		System.out.println("Step no.: "	+ countStep);
 
 	}
 	
@@ -29,6 +31,7 @@ public class FibonacciLogn {
 
 		while (startingNum<num) {
 			int nextNum;
+			
 			int valueOfBinaryOfNextNum = valueOfBinaryOfNextNum(startingNum, binaryStringOfNum);
 			
 			if (valueOfBinaryOfNextNum == 0) {
@@ -47,6 +50,7 @@ public class FibonacciLogn {
 						+ 2 * arrayOfFibo[startingNum] * arrayOfFibo[startingNum - 1];
 				startingNum = nextNum;
 			}
+			countStep++;
 		}
 		
 	}
