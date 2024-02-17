@@ -12,6 +12,10 @@ alt="Overview" border="10" /></a>
   + Rate monitor:  our rate graph history for each currency will help you decide when you should buy.
   + Market overview: easily find current rates offered by other companies in Australia and commercial market in the world.
 
+# Class Diagram:
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://github.com/bkoiyean/fx_destination/blob/master/Final%20diagram%20for%20FX%20Destination%20project.png" 
+alt="Final diagram for FX Destination project" border="10" />
+
 # Some features of the website
 1. Filter: User can’t access product & tools page without login
    
